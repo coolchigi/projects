@@ -1,12 +1,7 @@
 public class Laptop  {
-
-    //int ScreenSize;
-     double cpuSpeed; //To access it outside the class
+     double cpuSpeed; 
      int RAM, storage, screenSize;
-    //int Storage;
-
-
-    boolean hardDrive;
+     boolean hardDrive;
 
 
     public Laptop(int screenSize,double cpuSpeed, int RAM, int storage, boolean hardDrive){
@@ -14,10 +9,7 @@ public class Laptop  {
         this.RAM = RAM;
         this.screenSize = screenSize;
         this.storage = storage;
-
         this.hardDrive = hardDrive;
-
-
     }
 
 
@@ -29,14 +21,8 @@ public class Laptop  {
         }else{
             laptop = laptop + "SSD drive";
         }
-
         return this.screenSize + "\""  + " Laptop PC with " + this.cpuSpeed + "ghz CPU, " + this.RAM +
                 "GB" + " RAM, " + laptop;
-
     }
-
-
-
-
 
 }
