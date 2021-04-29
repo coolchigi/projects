@@ -15,7 +15,7 @@ public class ElectronicStoreTester {
         String searchItem = user.nextLine();
         finalItems.searchStock(searchItem);
 
-        while(!searchItem.equals("quit") ){ //To keep on asking for the item
+        while(!searchItem.equals("quit") ){ 
             System.out.println("Enter a term to search for: ");
             searchItem = user.nextLine();
             finalItems.searchStock(searchItem);
