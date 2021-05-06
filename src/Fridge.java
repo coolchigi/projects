@@ -19,7 +19,7 @@ public class Fridge {
     }
 
     public String toString(){
-        return String.format("%s cubic foot Fridge%s (%s)",getFridgeSize(),isPresentDet(),getColorF());
+        return String.format("%s cu. foot Fridge%s (%s)",getFridgeSize(),isPresentDet(),getColorF());
 
 
     }
