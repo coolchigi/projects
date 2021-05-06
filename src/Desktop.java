@@ -6,6 +6,7 @@ public class Desktop {
     private boolean isSSD;
 
     public Desktop(double cpuSpeed, int RAM, int storage, boolean hardDrive){
+          /*The this keyword refers to the current object in a method or constructor.*/
         this.cpuSpeed = cpuSpeed;
         this.RAM = RAM;
         this.storage = storage;
