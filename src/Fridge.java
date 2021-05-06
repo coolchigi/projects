@@ -1,11 +1,11 @@
 public class Fridge {
     private double fridgeSize;
-    private String colorF;
+    private String colorFr;
     private boolean isPresent;
 
-    public Fridge(double fridgeSize, String colorF,boolean isPresent){
+    public Fridge(double fridgeSize, String colorFr,boolean isPresent){
         this.fridgeSize = fridgeSize;
-        this.colorF = colorF;
+        this.colorFr = colorFr;
         this.isPresent = isPresent;
 
     }
