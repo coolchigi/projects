@@ -1,5 +1,5 @@
 
-    public class ElectronicStore {
+   public class ElectronicStore {
     private String name;
     Object[] products = new Object[9];
 
