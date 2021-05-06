@@ -11,18 +11,43 @@ public class Laptop  {
         this.storage = storage;
         this.hardDrive = hardDrive;
     }
-
-
-    public String toString() {
-        String laptop = this.storage + "GB ";
-
-        if(!this.hardDrive){
-            laptop = laptop + "HDD drive";
-        }else{
-            laptop = laptop + "SSD drive";
-        }
-        return this.screenSize + "\""  + " Laptop PC with " + this.cpuSpeed + "ghz CPU, " + this.RAM +
-                "GB" + " RAM, " + laptop;
+     
+     public int getScreenSize() {
+        return screenSize;
     }
+
+    public String toString(){
+        String result = "";
+        result += String.format("%s\" %s %sghz CPU, %sGB RAM, %sGB %s drive.",getScreenSize(),result(),
+                getCpuSpeed(),getrAM(),getStorageAm(),ssdDet());
+        return result;
+
+
+    }
+    public String result(){
+        return "Laptop PC with";
+    }
+
+    public int getrAM(){
+        return rAM;
+    }
+    public int getStorageAm(){
+        return storageAm;
+    }
+
+    public double getCpuSpeed() {
+        return cpuSpeed;
+    }
+
+    public String ssdDet(){
+        if(isSSD){
+            return "SSD";
+        }
+        else{
+            return "HDD";
+        }
+
+
+    
 
 }
