@@ -1,7 +1,7 @@
 public class Laptop  {
-     double cpuSpeed; 
-     int RAM, storage, screenSize;
-     boolean hardDrive;
+     private double cpuSpeed; 
+     private int RAM, storage, screenSize;
+     private boolean hardDrive;
 
 
     public Laptop(int screenSize,double cpuSpeed, int RAM, int storage, boolean hardDrive){
