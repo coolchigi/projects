@@ -1,32 +1,38 @@
 public class Fridge {
+    private double fridgeSize;
+    private String colorF;
+    private boolean isPresent;
 
-    double fridgeSize;
-
-     public boolean present;
-     String colour;
-
-    public Fridge(double fridgeSize, boolean present, String colour){
+    public Fridge(double fridgeSize, String colorF,boolean isPresent){
         this.fridgeSize = fridgeSize;
-        this.present = true;
-        this.present = present;
-        this.colour = colour;
+        this.colorF = colorF;
+        this.isPresent = isPresent;
 
-        }
+    }
 
+    public double getFridgeSize() {
+        return fridgeSize;
+    }
 
+    public String getColorF() {
+        return colorF;
+    }
 
     public String toString(){
-        String type = "Fridge";
+        return String.format("%s cubic foot Fridge%s (%s)",getFridgeSize(),isPresentDet(),getColorF());
 
-        if(present){
-            type = type + " with Freezer";
-        }else{
-            type = type + "";
+
+    }
+
+    public String isPresentDet(){
+        if(isPresent){
+            return " with Freezer";
         }
-        return this.fridgeSize + " cu. ft."
-                + type + " ("+ this.colour + ")";
+        else{
+            return "";
+        }
+    }
 
-
-}
+    
 }
 
