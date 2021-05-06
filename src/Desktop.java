@@ -1,8 +1,9 @@
 public class Desktop {
 
-     double cpuSpeed;
-     int RAM, storage;
-     boolean hardDrive ;
+    private double cpuSpeed;
+    private int rAM;
+    private int storageAm;
+    private boolean isSSD;
 
     public Desktop(double cpuSpeed, int RAM, int storage, boolean hardDrive){
         this.cpuSpeed = cpuSpeed;
@@ -16,17 +17,36 @@ public class Desktop {
 
 
 //This method returns a String representation of the objects
-    public String toString() {
-        String space = this.storage + "GB ";
-        if(!this.hardDrive){ 
-            space =  space + "HDD drive";
-        }else {
-            space = space +  "SSD drive";
-        }
-        
-        return "Desktop PC with " + this.cpuSpeed + "ghz CPU, " + this.RAM +
-                "GB RAM, "  + space;
+    public String toString(){
+        String result = "Desktop PC with ";
+        result += String.format("%sghz CPU, %sGB RAM, %dGB %s drive.", getCpuSpeed(),getrAM(),getStorageAm(),ssdDet());
+        return result;
 
-}
+    }
+
+    public double getCpuSpeed(){
+        return cpuSpeed;
+    }
+
+    public int getrAM(){
+        return rAM;
+    }
+
+    public int getStorageAm(){
+        return storageAm;
+    }
+
+    public boolean getSSD(){
+        return isSSD;
+    }
+
+    public String ssdDet(){
+        if(isSSD){
+            return "SSD";
+        }
+        else{
+            return "HDD";
+        }
+    }
 }
 
