@@ -2,9 +2,7 @@ package com.everythinggozi;
 
 import java.util.Scanner;
 
-public class NEWtutorial {
-
-
+public class BMICalculator {
 
     public static void main(String[] args) {
 
@@ -40,10 +38,5 @@ public class NEWtutorial {
             System.out.print("You are obese " + userName + "!");
         }
 
-
-
-
     }
-
-
 }
