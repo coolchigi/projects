@@ -19,15 +19,7 @@ public class GuessingGame {
                 System.out.println("You chose the right number");
                 break;
             }
-
         }
-
-
-
-
-
-
-
 
     }
 }
