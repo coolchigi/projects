@@ -1,38 +1,26 @@
-public class Fridge {
+public class Fridge extends HomeAppliance{
     private double fridgeSize;
-    private String colorFr;
-    private boolean isPresent;
+    private boolean hasFreezer;
 
-    public Fridge(double fridgeSize, String colorFr,boolean isPresent){
+    public Fridge(double price, int quantity,int wattage, String colorF, String brand, double fridgeSize,
+                  boolean hasFreezer){
+        super(price,quantity,wattage,colorF,brand);
+        this.hasFreezer = hasFreezer;
         this.fridgeSize = fridgeSize;
-        this.colorFr = colorFr;
-        this.isPresent = isPresent;
-
-    }
-
-    public double getFridgeSize() {
-        return fridgeSize;
-    }
-
-    public String getColorF() {
-        return colorF;
     }
 
     public String toString(){
-        return String.format("%s cu. foot Fridge%s (%s)",getFridgeSize(),isPresentDet(),getColorF());
-
-
+        return fridgeSize + "cu. ft." + getBrand() + isPresentDet() + super.toString();
     }
 
     public String isPresentDet(){
-        if(isPresent){
-            return " with Freezer";
+        if(hasFreezer){
+            return " Fridge with Freezer";
         }
         else{
-            return "";
+            return " Fridge";
         }
     }
 
-    
 }
 
