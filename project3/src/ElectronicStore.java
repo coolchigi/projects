@@ -10,7 +10,6 @@ public class ElectronicStore {
         MAX_PRODUCTS = 10;
         products = new Product[MAX_PRODUCTS];
         revenue = 0;
-
     }
 
     public String getName(){
