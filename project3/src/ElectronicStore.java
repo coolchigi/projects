@@ -11,10 +11,6 @@ public class ElectronicStore {
         products = new Product[MAX_PRODUCTS];
         revenue = 0;
 
-
-
-
-
     }
 
     public String getName(){
@@ -53,7 +49,6 @@ public class ElectronicStore {
             System.out.println(i + ". " + products[i]);
         }
     }
-
 
     }
 
